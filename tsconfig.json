@@ -17,11 +17,8 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "eu.libraries": [
-        "dist/eu.libraries"
-      ],
-      "shared.libraries": [
-        "dist/shared.libraries"
+      "eu-library": [
+        "dist/eu-library"
       ]
     },
     "target": "ES2022",

@@ -1,10 +1,9 @@
 import { Component, Input } from "@angular/core";
-import { Order } from "projects/eu.libraries/src/lib/models/order.model";
+import { Order } from "eu-library";
 
 @Component({
   selector: "order-list",
-  templateUrl: "./order-list.component.html",
-  styleUrls: ["./order-list.component.css"],
+  templateUrl: "./order-list.component.html"
 })
 export class OrderListComponent {
   @Input() public filterBy: string = "";

@@ -2,10 +2,8 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
 import { AppComponent } from "./app.component";
-import { EuOrderListModule } from "projects/eu.libraries/src/lib/components/eu-order-list/eu-order-list.module";
-import { OrderListComponent } from './components/order-list/order-list.component';
-
-
+import { OrderListComponent } from "./components/order-list/order-list.component";
+import { EuOrderListModule } from "eu-library";
 
 @NgModule({
   declarations: [AppComponent, OrderListComponent],

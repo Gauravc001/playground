@@ -1,6 +1,6 @@
 import { sandboxOf } from "angular-playground";
 import { OrderListComponent } from "./order-list.component";
-import { EuOrderListModule } from "projects/eu.libraries/src/lib/components/eu-order-list/eu-order-list.module";
+import { EuOrderListModule } from "eu-library";
 
 const sandboxConfig = {
   declarations: [OrderListComponent],

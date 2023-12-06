@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 
 import { OrderListModule } from "primeng/orderlist";
-import { EuOrderListComponent } from "./eu-order-list.component";
+import { EuOrderListComponent } from "./order-list.component";
 
 @NgModule({
   declarations: [EuOrderListComponent],

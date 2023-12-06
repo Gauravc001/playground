@@ -1,0 +1,27 @@
+{
+  "name": "eu-library",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^16.0.0",
+    "@angular/core": "^16.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "description": "EU library containing UI components created as a wrapper for primeng angular components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravsahudev/playground.git"
+  },
+  "author": "Gaurav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gauravsahudev/playground/issues"
+  },
+  "homepage": "https://github.com/gauravsahudev/playground#readme"
+}
