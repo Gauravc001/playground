@@ -4,7 +4,7 @@ import { Order } from "../../api/order.interface";
 @Component({
   selector: "eu-order-list",
   templateUrl: "./order-list.component.html",
-  styleUrls: ["./order-list.component.scss"],
+  styleUrls: ["./order-list.component.css"],
 })
 export class EuOrderListComponent {
   @Input() public filterBy: string = "";

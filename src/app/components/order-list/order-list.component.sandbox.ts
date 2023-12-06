@@ -8,12 +8,12 @@ const sandboxConfig = {
 };
 
 export default sandboxOf(OrderListComponent, sandboxConfig)
-  .add("Basic", {
+  .add("default", {
     template: `<order-list></order-list>`,
   })
-  .add("Filter", {
+  .add("filter", {
     template: `<order-list [filterBy]="'name'"></order-list>`,
   })
-  .add("Drag drop", {
+  .add("drag drop", {
     template: `<order-list [dragdrop]="true"></order-list>`,
   });
