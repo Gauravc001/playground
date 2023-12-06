@@ -32,7 +32,7 @@
             "styles": [
               "src/styles.scss",
               "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "/node_modules/primeflex/primeflex.css",
+              "node_modules/primeflex/primeflex.css",
               "node_modules/primeng/resources/primeng.min.css",
               "src/assets/font/roboto.css"
             ],
@@ -155,6 +155,39 @@
           "options": {
             "browserTarget": "playground:build",
             "port": 4201
+          }
+        }
+      }
+    },
+    "eu.libraries": {
+      "projectType": "library",
+      "root": "projects/eu.libraries",
+      "sourceRoot": "projects/eu.libraries/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/eu.libraries/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/eu.libraries/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/eu.libraries/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/eu.libraries/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
           }
         }
       }
