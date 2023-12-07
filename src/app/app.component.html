@@ -1,1 +1,5 @@
-<order-list></order-list>
+<h4>Order list component</h4>
+<eu-order-list [products]="products" [dragdrop]="dragdrop" [filterBy]="filterBy"></eu-order-list>
+<h4>Sidebar component</h4>
+<eu-sidebar [sidebarVisible]="sidebarVisible" [position]="position"></eu-sidebar>
+<p-button (click)="sidebarVisible = !sidebarVisible" icon="pi {{icon}}"></p-button>
